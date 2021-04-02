@@ -26,12 +26,12 @@ void xargs(int argc, char* argv[])
             buf[currArgc++][j] = 0; j = 0;
             if (*c == '\n')
             {
+                for (int i = 0; i<currArgc; i++)
+                    argv[i] = buf[i];
+                argv[currArgc] = 0;
                 if (fork1() == 0) {
-                    char *line[MAXARG];
-                    for (int i = 0; i<currArgc; i++)
-                        line[i] = buf[i];
-                    exec(line[1], &line[1]);
-                    fprintf(2, "exec %s failed\n", line[1]);
+                    exec(argv[1], &argv[1]);
+                    fprintf(2, "exec %s failed\n", argv[1]);
                 }
                 wait(0);
                 currArgc = argc;

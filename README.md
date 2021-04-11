@@ -1,31 +1,31 @@
 # xv6-labs-2020
 Here are solved questions for lab: https://pdos.csail.mit.edu/6.828/2020/tools.html
 
-- [ ] Lab 1 (Lab Utilities)
+- [ ] Lab 1 (Utilities)
   - [x] Q1 (sleep)
   - [x] Q2 (pingpong)
   - [ ] Q3 (primes)
   - [x] Q4 (find)
   - [x] Q5 (xargs)
   
-- [ ] Lab 2 (Lab System Calls)
+- [ ] Lab 2 (System Calls)
   - [ ] Q1 (Systemcall Tracing)
   - [ ] Q2 (Sysinfo)
   
-- [ ] Lab 3 (Lab Page Tables)
+- [ ] Lab 3 (Page Tables)
 
-- [ ] Lab 4 (Lab Traps)
+- [ ] Lab 4 (Traps)
 
-- [ ] Lab 5 (Lab Lazy Allocation) 
+- [ ] Lab 5 (Lazy Allocation) 
 
-- [ ] Lab 6 (Lab Copy on-write)
+- [ ] Lab 6 (Copy on-write)
 
-- [ ] Lab 7 (Lab Multithreading)
+- [ ] Lab 7 (Multithreading)
 
-- [ ] Lab 8 (Lab Lock)
+- [ ] Lab 8 (Lock)
 
-- [ ] Lab 9 (Lab File System)
+- [ ] Lab 9 (File System)
 
-- [ ] Lab 10 (Lab Mmap)
+- [ ] Lab 10 (Mmap)
 
-- [ ] Lab 11 (Lab Network Driver)
+- [ ] Lab 11 (Network Driver)

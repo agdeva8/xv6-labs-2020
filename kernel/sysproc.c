@@ -95,3 +95,16 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+uint64
+sys_trace(void)
+{
+  printf("inside kernel trace \n");
+  // uint xticks;
+
+  // acquire(&tickslock);
+  // xticks = ticks;
+  // release(&tickslock);
+  // return xticks;
+  return 0;
+}

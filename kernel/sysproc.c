@@ -99,12 +99,13 @@ sys_uptime(void)
 uint64
 sys_trace(void)
 {
-  printf("inside kernel trace \n");
-  // uint xticks;
+  int trace;
+  if (argint(0, &trace) < 0) {
+    panic("sys_trace");
+    return -1;
+  }
 
-  // acquire(&tickslock);
-  // xticks = ticks;
-  // release(&tickslock);
-  // return xticks;
+  struct proc *p = myproc();
+  p->trace = trace;
   return 0;
 }

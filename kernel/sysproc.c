@@ -3,6 +3,7 @@
 #include "defs.h"
 #include "date.h"
 #include "param.h"
+#include "sysinfo.h"
 #include "memlayout.h"
 #include "spinlock.h"
 #include "proc.h"
@@ -107,5 +108,25 @@ sys_trace(void)
 
   struct proc *p = myproc();
   p->trace = trace;
+  return 0;
+}
+
+uint64
+sys_sysinfo(void)
+{
+  uint64 addr; // user virtual address pointing to struct sysinfo 
+  if (argaddr(0, &addr) < 0) {
+    return -1;
+  }
+
+  struct proc *p = myproc();
+  struct sysinfo info;
+
+  info.freemem = kfreemem();
+  info.nproc = getnprocs();
+
+  if (copyout(p->pagetable, addr, (char *)&info, sizeof(info)) < 0) {
+    return -1;
+  }
   return 0;
 }

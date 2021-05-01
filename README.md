@@ -10,7 +10,7 @@ Here are solved questions for lab: https://pdos.csail.mit.edu/6.828/2020/tools.h
   
 - [ ] Lab 2 (System Calls)
   - [x] Q1 (Systemcall Tracing)
-  - [ ] Q2 (Sysinfo)
+  - [x] Q2 (Sysinfo)
   
 - [ ] Lab 3 (Page Tables)
 
